@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @EnvironmentObject var router: Router
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: $router.selectedTab) {
+            FirstScreen().tabItem {
+                Text("first")
+                Image(systemName: "umbrella.fill")
+            }.tag(0)
+            SecondScreen().tabItem {
+                Text("second")
+                Image(systemName: "seal.fill")
+            }.tag(1)
+            ThirdScreen().tabItem {
+                Text("third")
+                Image(systemName: "cloud.moon.fill")
+            }.tag(2)
+        }
     }
 }
 

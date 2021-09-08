@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D613A2426E22E8F00FDD5CD /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D613A2326E22E8F00FDD5CD /* ActivityIndicator.swift */; };
 		3DB4A75026DA32EA00113FFE /* OtusTasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4A74F26DA32EA00113FFE /* OtusTasksApp.swift */; };
 		3DB4A75226DA32EA00113FFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4A75126DA32EA00113FFE /* ContentView.swift */; };
 		3DB4A75426DA32ED00113FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB4A75326DA32ED00113FFE /* Assets.xcassets */; };
 		3DB4A75726DA32ED00113FFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB4A75626DA32ED00113FFE /* Preview Assets.xcassets */; };
+		3DB4A76026DA38EB00113FFE /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4A75F26DA38EB00113FFE /* FirstScreen.swift */; };
+		3DB4A76226DA38FE00113FFE /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4A76126DA38FE00113FFE /* SecondScreen.swift */; };
+		3DB4A76426DA391300113FFE /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4A76326DA391300113FFE /* ThirdScreen.swift */; };
+		3DB4A76726DCD1DD00113FFE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4A76626DCD1DC00113FFE /* Item.swift */; };
+		3DB4A76926DCDA0000113FFE /* ItemDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4A76826DCDA0000113FFE /* ItemDetailsScreen.swift */; };
+		3DBEC44E26E8DDA7009F6305 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEC44D26E8DDA7009F6305 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D613A2326E22E8F00FDD5CD /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		3DB4A74C26DA32EA00113FFE /* OtusTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB4A74F26DA32EA00113FFE /* OtusTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusTasksApp.swift; sourceTree = "<group>"; };
 		3DB4A75126DA32EA00113FFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DB4A75326DA32ED00113FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB4A75626DA32ED00113FFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DB4A75826DA32ED00113FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB4A75F26DA38EB00113FFE /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		3DB4A76126DA38FE00113FFE /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		3DB4A76326DA391300113FFE /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		3DB4A76626DCD1DC00113FFE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3DB4A76826DCDA0000113FFE /* ItemDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsScreen.swift; sourceTree = "<group>"; };
+		3DBEC44D26E8DDA7009F6305 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D613A2226E22E7700FDD5CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D613A2326E22E8F00FDD5CD /* ActivityIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3DB4A74326DA32EA00113FFE = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +74,10 @@
 		3DB4A74E26DA32EA00113FFE /* OtusTasks */ = {
 			isa = PBXGroup;
 			children = (
+				3DBEC44C26E8DD8D009F6305 /* ViewModel */,
+				3D613A2226E22E7700FDD5CD /* Views */,
+				3DB4A76526DCD1C900113FFE /* Model */,
+				3DB4A75E26DA388E00113FFE /* Screens */,
 				3DB4A74F26DA32EA00113FFE /* OtusTasksApp.swift */,
 				3DB4A75126DA32EA00113FFE /* ContentView.swift */,
 				3DB4A75326DA32ED00113FFE /* Assets.xcassets */,
@@ -67,6 +93,33 @@
 				3DB4A75626DA32ED00113FFE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DB4A75E26DA388E00113FFE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3DB4A75F26DA38EB00113FFE /* FirstScreen.swift */,
+				3DB4A76126DA38FE00113FFE /* SecondScreen.swift */,
+				3DB4A76326DA391300113FFE /* ThirdScreen.swift */,
+				3DB4A76826DCDA0000113FFE /* ItemDetailsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3DB4A76526DCD1C900113FFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DB4A76626DCD1DC00113FFE /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DBEC44C26E8DD8D009F6305 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DBEC44D26E8DDA7009F6305 /* Router.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB4A75226DA32EA00113FFE /* ContentView.swift in Sources */,
+				3DB4A76226DA38FE00113FFE /* SecondScreen.swift in Sources */,
+				3DB4A76426DA391300113FFE /* ThirdScreen.swift in Sources */,
 				3DB4A75026DA32EA00113FFE /* OtusTasksApp.swift in Sources */,
+				3DBEC44E26E8DDA7009F6305 /* Router.swift in Sources */,
+				3D613A2426E22E8F00FDD5CD /* ActivityIndicator.swift in Sources */,
+				3DB4A76726DCD1DD00113FFE /* Item.swift in Sources */,
+				3DB4A76926DCDA0000113FFE /* ItemDetailsScreen.swift in Sources */,
+				3DB4A76026DA38EB00113FFE /* FirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
